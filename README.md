@@ -1,5 +1,5 @@
 # BitcoinSeedSplitter
-Splitting your 12 or 24 words mnemonic to multiple fault tolerant split-mnemonics (Shares) using shamir secret sharing.
+Splitting your 12 or 24 words mnemonic to  multiple equal and fault tolerant split-mnemonics (Shares) using shamir secret sharing.
 Different from Slip39 as here we are safeguarding the seed words, not the derived master key.
 
 <b>Important to add, explanation of problem solved here:</b><br/>
