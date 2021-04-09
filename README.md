@@ -1,4 +1,3 @@
-'''diff
 # BitcoinSeedSplitter
 Splitting your 12 or 24 words mnemonic to  multiple equal and fault tolerant split-mnemonics (Shares) using shamir secret sharing.
 Different from Slip39 as here we are safeguarding the seed words, not the derived master key. Problem is with Slip39: there is no way to go back to seed words from the derived master seed, hence it's not possible/easy to use it with any popular wallets.
@@ -18,7 +17,7 @@ Using shares you can use a 3 of 4. Where you can loose ANY 1 but 3 would be need
 You can go way up, like using 6 of 10 which gives you very high fault tolerance with low risk of seed-rebuild. Even knowing 5 of the 10 will not make brute force possible.<br/>
 
 <b>How this implemantation works:</b>
-You type in (be careful!!!) your 12 or 24 words long BIP39 seed/mnemonic.
+You type in  your 12 or 24 words long BIP39 seed/mnemonic <b>(be careful on what device!!!)</b>
 Select how many splits you want (2-15) and how many will be needed to restore the original seed (1-14).
 Select OPTIONAL password (this in NOT your BIP passpharse, this encrypts the seed itself).
 
