@@ -1,0 +1,69 @@
+﻿<UserControl x:Class="BIP39Splitter.ucSplit"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:BIP39Splitter"
+             mc:Ignorable="d" 
+             d:DesignHeight="720" d:DesignWidth="1280" Loaded="UserControl_Loaded">
+    <Grid>
+        <Grid x:Name="gridFullScreenText" Visibility="Collapsed">
+            <TextBlock FontSize="48"></TextBlock>
+        </Grid>
+        <Grid x:Name="gridSplit" Margin="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"></RowDefinition>
+                <RowDefinition Height="10"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="10"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="10"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="25"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+            </Grid.RowDefinitions>
+            <StackPanel Orientation="Vertical" Grid.Row="0" >
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="40"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBox x:Name="txtSeedToSplit" FontSize="24" Background="Bisque" VerticalAlignment="Center" Grid.Column="0"></TextBox>
+                    <Button x:Name="btnLockSeed" Grid.Column="1" Width="30" Height="30" Click="btnLockSeed_Click" Visibility="Collapsed">
+                        <Image Source="/lock-256.png"></Image>
+                    </Button>
+                    <Button x:Name="btnLockSeedOpen" Grid.Column="1" Width="30" Height="30" Click="btnLockSeed_Click">
+                        <Image Source="/lock-256-open.png"></Image>
+                    </Button>
+                </Grid>
+                <TextBox x:Name="txtSeedHex" FontSize="16" VerticalAlignment="Center" ToolTip="Seed string bytes in Hex format (11 bites and CRC)"></TextBox>
+                <TextBox x:Name="txtSeedBIP39HEX" FontSize="16"  VerticalAlignment="Center" ToolTip="Derived BIP39 master seed"></TextBox>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Grid.Row="2">
+                <Label Content="ShareCount:" FontSize="24" ToolTip="How many shares will be created" VerticalAlignment="Center"></Label>
+                <TextBox x:Name="txtShareCount" FontSize="24" Width="80" VerticalAlignment="Center"></TextBox>
+                <Label Content="Threshold:" FontSize="24" ToolTip="How many shares needed MINIMUM to recronstruct the seed" VerticalAlignment="Center"></Label>
+                <TextBox x:Name="txtThreshold" FontSize="28" Width="80" VerticalAlignment="Center"/>
+                <Label Content="Password:" FontSize="24" ToolTip="Optional password" VerticalAlignment="Center"/>
+                <TextBox x:Name="txtPassword" FontSize="28" Width="200" VerticalAlignment="Center" AllowDrop="False" PreviewKeyDown="txtPassword_PreviewKeyDown" />
+                <Label Content="Seconds:" FontSize="24" ToolTip="Optional password" VerticalAlignment="Center"/>
+                <TextBox x:Name="txtSeconds" FontSize="28" Width="60" VerticalAlignment="Center" AllowDrop="False" PreviewKeyDown="txtSeconds_PreviewKeyDown" Text="300" />
+
+                <Button x:Name="btnDoSplit" Content="Do Split" FontSize="24" Width="140" Margin="50,5,0,5" Click="btnDoSplit_Click"></Button>
+                <Button x:Name="btnCopySharesToClipboard" Content="Copy to Clipboard" FontSize="24" Margin="50,5,0,5" IsEnabled="False" Click="btnCopySharesToClipboard_Click"></Button>
+            </StackPanel>
+
+            <ListBox x:Name="lstSplitShares" Grid.Row="4" SelectionMode="Multiple" SelectionChanged="lstSplitShares_SelectionChanged">
+
+            </ListBox>
+
+            <Viewbox Grid.Row="7" HorizontalAlignment="Left">
+                <TextBlock Text="Re-built result"></TextBlock>
+            </Viewbox>
+            <TextBlock x:Name="txtTestMerged" Grid.Row="8" FontSize="24" Background="LightCyan" VerticalAlignment="Center"></TextBlock>
+
+        </Grid>
+    </Grid>
+
+</UserControl>

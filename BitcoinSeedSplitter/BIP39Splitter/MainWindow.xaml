@@ -1,0 +1,24 @@
+﻿<Window x:Class="BIP39Splitter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BIP39Splitter"
+        mc:Ignorable="d"
+        Title="BIP39 Seed Splitter" Width="1920" Height="1080"  WindowStartupLocation="CenterScreen" WindowState="Normal">
+    <Grid x:Name="gridMain">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="10"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" Grid.Row="0">
+            <Viewbox Height="40">
+                <RadioButton x:Name="rbSplit" Content="Split" IsChecked="True" Margin="0,0,50,0" GroupName="WhatToDo" Checked="rbSplit_Checked"/>
+            </Viewbox>
+            <Viewbox Height="40">
+                <RadioButton x:Name="rbMerge" Content="Merge" Margin="0,0,0,0" GroupName="WhatToDo" Checked="rbMerge_Checked"></RadioButton>
+            </Viewbox>
+        </StackPanel>
+    </Grid>
+</Window>
