@@ -61,3 +61,11 @@ Translate all Shares to ShareMnemonic using the BIP39 wordlist<br/>
 8 bits:  Length of data<br/>
 X bits:  Data<br/>
 4-11 bits: CRC like in the original BIP39 seed  (length depends on how many bits are optimal to get full bytes) <br/>
+
+<br/>
+<b>Safety considerations for enough sum you worry about</><br/>
+Only use this on air-gapped (Eg. no network AT ALL) computers. <br/>
+This software won't save,cache,send or store anything. But the OS it's running on can (!).<br/>
+Use on a clean install with least possible device connected (Screen, keyboard, mouse all wired)
+Write down the Shares MANUALLY (do not print as printers have memory/cache)
+Wipe or destroy the disk after.
