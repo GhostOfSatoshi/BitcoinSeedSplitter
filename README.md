@@ -27,29 +27,21 @@ None of the share holders will have any knowledge of the seed nor any chance to 
 
 Be carefull not to set too low fault tolerancy level. For example: 9 of 10 works, but if you can only  access 8 of the Shares you won't be able to restore any part of your seed. You lost it all!
 
-Windows release available:
+<b>Windows release available:</b>
 https://github.com/GhostOfSatoshi/BitcoinSeedSplitter/releases
 
 Multiple implementations and Linux exe would be a nice addition.
 <br/><br/>
-Implementation details:<br/>
+<b>Implementation details:</b><br/>
 You start with the bits from the original seed (all 12 or 24 words x 11 bits)<br/>
 If password present: Get SHA256 hash of the ASCII password 100K times and  XOR the seed with it<br/>
 Do the Sahmier secret sharing<br/>
 Translate all Shares to ShareMnemonic using the BIP39 wordlist<br/>
-<br/><br/>
+<br/><b>
 Share build-up:<br/>
 11 bits: SplitID (to identify you use the right shares to reconstruct)<br/>
 4 bits:  ShareID (ID of current share)<br/>
 4 bits:  Threshold (how many shares are needed to reconstruct as Shamir merge actually merges any number of shares, but the results is junk of course)<br/>
 8 bits:  Length of data<br/>
 X bits:  Data<br/>
-4-11 bits: CRC like in the original BIP39 seed  (length depends on how many bits are optimal to get full bytes) <br/>
-
-
-
-
-
-
-
-
+4-11 bits: CRC like in the original BIP39 seed  (length depends on how many bits are optimal to get full bytes) <br/></b>
