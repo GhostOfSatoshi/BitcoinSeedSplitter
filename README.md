@@ -25,4 +25,4 @@ Advantages:
 You can loose 2 of the 5 and still be able to restore the original seed.
 None of the share holders will have any knowledge of the seed nor any chance to restore it.
 
-Be carefull not to set too low fault tolerancy level. For example: 9 of 10 works, but if you can only have 8 Shares you won't be able to restore any part of your seed.
+Be carefull not to set too low fault tolerancy level. For example: 9 of 10 works, but if you can only  access 8 of the Shares you won't be able to restore any part of your seed. You lost it all!
