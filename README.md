@@ -13,8 +13,7 @@ Now ff you loose ANY 1(!) of these you are done. <br/>
 If you add a fourth it's better:<br/>
 1-4 <br/>
 Now you can loose any ONE, but two right one is enough to  reconstruct the whole seed just as earlier. Also one is enough to guess "only" 6 words which maybe feasable in the future. The right two (1and2, 2and3) is enough to have nine words. Guessing the remaining three words is easy <b>TODAY.</b><br/>
-Using Shares you can use a 3 of 4. Where you can loose ANY 1 but 3 would be needed to reconstruct the seed. Knowing one share would give you zero information hence brute for is impoosbile.<br/>
-You can go way up, like using 6 of 10 which gives you very high fault tolerance with low risk of seed-rebuild. Even knowing 5 of the 10 will not make brute force possible.<br/>
+Using Shares you can use a 3 of 4. Where you can loose ANY 1 but 3 would be needed to reconstruct the seed. Knowing one less than three shares would give you zero information hence brute force is impoosbile. You can go way up, like using 6 of 10 which gives you very high fault tolerance with low risk of seed-rebuild. Even knowing 5 of the 10 will not make brute force possible.<br/>
 
 <b>How this implemantation works:</b><br/>
 You type in  your 12 or 24 words long BIP39 seed/mnemonic <b>(be careful on what device!!!)</b><br/>
