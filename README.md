@@ -22,7 +22,7 @@ Select how many splits you want (2-15) and how many will be needed to restore th
 Select OPTIONAL password (this in NOT your BIP passpharse, this encrypts the seed itself).<br/>
 
 <br/>
-Example:<br/>
+<b>Example:</b><br/>
 You have a 12 words seed which you want to store safely in 5 places with fault tolerancy. 3 of the 5 shares will be enough to rebuild the original seed.
 (plus the optional password)
 <br/>
