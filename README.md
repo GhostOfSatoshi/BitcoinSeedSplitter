@@ -29,3 +29,5 @@ Be carefull not to set too low fault tolerancy level. For example: 9 of 10 works
 
 Windows release available:
 https://github.com/GhostOfSatoshi/BitcoinSeedSplitter/releases
+
+Multiple implementations and Linux exe would be a nice addition.
