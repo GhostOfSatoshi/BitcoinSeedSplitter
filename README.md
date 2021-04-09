@@ -39,10 +39,13 @@ Output Shares:<br/>
 <b>Advantages:</b><br/>
 You can loose ANY 2 of the 5 and still be able to restore the original seed.<br/>
 None of the share holders will have any knowledge of the seed nor any chance to restore it (eg. not weakening the seed)<br/>
-<b>*****Be carefull***** not to set too low fault tolerancy level. For example: 9 of 10 works, but if you can only have 8 of the Shares you won't be able to restore any part of your seed. You lost it all!</b>
 
+<br/>
 <b>Windows release available:</b>
 https://github.com/GhostOfSatoshi/BitcoinSeedSplitter/releases
+<br/>
+
+<b>*****Be carefull***** not to set too low fault tolerancy level. For example: 9 of 10 works, but if you can only have 8 of the Shares you won't be able to restore any part of your seed. You lost it all!</b>
 
 Multiple implementations and Linux exe would be a nice addition.
 <br/><br/>
