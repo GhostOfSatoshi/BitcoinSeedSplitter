@@ -44,7 +44,7 @@ Share build-up:
 4 bits:  Threshold (how many shares are needed to reconstruct as Shamir merge actually merges any number of shares, but the results is junk of course)
 8 bits:  Length of data
 X bits:  Data
-4-11 bits: CRC like in the original BIP39 seed  (length depends on how many bits are optimal to get full bytes)
+4-11 bits: CRC like in the original BIP39 seed  (length depends on how many bits are optimal to get full bytes) 
 
 
 
