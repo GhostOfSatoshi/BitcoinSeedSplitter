@@ -39,7 +39,7 @@ Do the Sahmier secret sharing
 Translate all Shares to ShareMnemonic using the BIP39 wordlist
 
 Share build-up:
-11 bits: SplitID (to identify you use the right shares to reconstruct)
+11 bits: SplitID (to identify you use the right shares to reconstruct)<br/>
 4 bits:  ShareID (ID of current share)
 4 bits:  Threshold (how many shares are needed to reconstruct as Shamir merge actually merges any number of shares, but the results is junk of course)
 8 bits:  Length of data
