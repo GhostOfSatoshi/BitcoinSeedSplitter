@@ -31,20 +31,20 @@ Windows release available:
 https://github.com/GhostOfSatoshi/BitcoinSeedSplitter/releases
 
 Multiple implementations and Linux exe would be a nice addition.
-
-Implementation details:
-You start with the bits from the original seed (all 12 or 24 words x 11 bits)
-If password present: Get SHA256 hash of the ASCII password 100K times and  XOR the seed with it
-Do the Sahmier secret sharing
-Translate all Shares to ShareMnemonic using the BIP39 wordlist
-
+<br/><br/>
+Implementation details:<br/>
+You start with the bits from the original seed (all 12 or 24 words x 11 bits)<br/>
+If password present: Get SHA256 hash of the ASCII password 100K times and  XOR the seed with it<br/>
+Do the Sahmier secret sharing<br/>
+Translate all Shares to ShareMnemonic using the BIP39 wordlist<br/>
+<br/><br/>
 Share build-up:<br/>
 11 bits: SplitID (to identify you use the right shares to reconstruct)<br/>
 4 bits:  ShareID (ID of current share)<br/>
-4 bits:  Threshold (how many shares are needed to reconstruct as Shamir merge actually merges any number of shares, but the results is junk of course)
-8 bits:  Length of data
-X bits:  Data
-4-11 bits: CRC like in the original BIP39 seed  (length depends on how many bits are optimal to get full bytes) 
+4 bits:  Threshold (how many shares are needed to reconstruct as Shamir merge actually merges any number of shares, but the results is junk of course)<br/>
+8 bits:  Length of data<br/>
+X bits:  Data<br/>
+4-11 bits: CRC like in the original BIP39 seed  (length depends on how many bits are optimal to get full bytes) <br/>
 
 
 
