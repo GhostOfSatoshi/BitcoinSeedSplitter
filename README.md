@@ -22,7 +22,7 @@ Select how many splits you want (2-15) and how many will be needed to restore th
 Select OPTIONAL password (this in NOT your BIP passpharse, this encrypts the seed itself).<br/>
 
 <br/>
-Example:
+Example:<br/>
 You have a 12 words seed which you want to store safely in 5 places with fault tolerancy. 3 of the 5 shares will be enough to rebuild the original seed.
 (plus the optional password)
 <br/>
@@ -36,7 +36,7 @@ Output Shares:<br/>
 4. stage clump donor major grape glad network quote sort above mad rule left verify such gate<br/>
 5. stage proof earth genre music middle river guess topic swim rebel outer adult spend harvest rapid<br/>
 <br/>
-Advantages:<br/>
+<b>Advantages:</b><br/>
 You can loose ANY 2 of the 5 and still be able to restore the original seed.<br/>
 None of the share holders will have any knowledge of the seed nor any chance to restore it (eg. not weakening the seed)<br/>
 -<b>Be carefull</b> not to set too low fault tolerancy level. For example: 9 of 10 works, but if you can only have 8 of the Shares you won't be able to restore any part of your seed. You lost it all!
