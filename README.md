@@ -1,3 +1,4 @@
+'''diff
 # BitcoinSeedSplitter
 Splitting your 12 or 24 words mnemonic to  multiple equal and fault tolerant split-mnemonics (Shares) using shamir secret sharing.
 Different from Slip39 as here we are safeguarding the seed words, not the derived master key. Problem is with Slip39: there is no way to go back to seed words from the derived master seed, hence it's not possible/easy to use it with any popular wallets.
@@ -39,9 +40,7 @@ Output Shares:<br/>
 Advantages:<br/>
 You can loose ANY 2 of the 5 and still be able to restore the original seed.<br/>
 None of the share holders will have any knowledge of the seed nor any chance to restore it (eg. not weakening the seed)<br/>
-<span style="color: red">
-<b>Be carefull</b> not to set too low fault tolerancy level. For example: 9 of 10 works, but if you can only have 8 of the Shares you won't be able to restore any part of your seed. You lost it all!
-</span>
+-<b>Be carefull</b> not to set too low fault tolerancy level. For example: 9 of 10 works, but if you can only have 8 of the Shares you won't be able to restore any part of your seed. You lost it all!
 
 <b>Windows release available:</b>
 https://github.com/GhostOfSatoshi/BitcoinSeedSplitter/releases
