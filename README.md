@@ -2,6 +2,9 @@
 Splitting your 12 or 24 words mnemonic to multiple fault tolerant split-mnemonics (Shares) using shamir secret sharing.
 Different from Slip39 as here we are safeguarding the seed words, not the derived master key.
 
+<b>Important to add:</b><br/>
+We are talking about <b>equal</b> shares here. If you split the seed manually you end up with shares, but it matters which one you lost because your shares are not equal but actually just portions of the original seed.
+
 How it works:
 You type in (be careful!!!) your 12 or 24 words long BIP39 seed/mnemonic.
 Select how many splits you want (2-15) and how many will be needed to restore the original seed (1-14).
