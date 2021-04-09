@@ -45,7 +45,7 @@ None of the share holders will have any knowledge of the seed nor any chance to 
 https://github.com/GhostOfSatoshi/BitcoinSeedSplitter/releases
 <br/><br/>
 
-<b>*****Be carefull***** not to set too low fault tolerancy level. For example: 9 of 10 works, but if you can only have 8 of the Shares you won't be able to restore any part of your seed. You lost it all!</b>
+<b>*****Be carefull***** NOT to set too low fault tolerancy level. For example: 9 of 10 works, but if you  have only 8 of the Shares you won't be able to restore any part of your seed. You lost it all!</b>
 
 Multiple implementations and Linux exe would be a nice addition.
 <br/><br/>
