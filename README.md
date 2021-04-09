@@ -2,20 +2,19 @@
 Splitting your 12 or 24 words mnemonic to  multiple equal and fault tolerant split-mnemonics (Shares) using shamir secret sharing.
 Different from Slip39 as here we are safeguarding the seed words, not the derived master key. Problem is with Slip39: there is no way to go back to seed words from the derived master seed, hence it's not possible/easy to use it with any popular wallets.
 
-<b>Important to add, explanation of problem solved here:</b><br/>
-We are talking about <b>equal</b> shares here. If you split the seed manually you end up with pieces, but it will matter which one you lost because your splits are not equal. They are not shares but actually just splits of the original seed.
-Example of easy but sub-optimal split:<br/>
-1-2-3-4 (4x3 words)
-1-2  <br/>
+<b>Explanation of the problem and solution:</b><br/>
+We are talking about <b>equal</b> shares here. When you split your seed manually you end up with pieces, but it will matter which one you lost because your splits are NOT equal. They are not shares but actually just pieces of the original seed (also making brute force theoretically/future possible).
+Example of easy but sub-optimal manual split:<br/>
+1-2-3-4 (4x3 words=12 words seed)
+1-2 <br/>
 2-3 <br/>
 3-4 <br/>
-You loose any 1(!) of these you are done. <br/>
-If you add a fourth:<br/>
+If you loose ANY 1(!) of these you are done. <br/>
+If you add a fourth it's better:<br/>
 1-4 <br/>
 Now you can loose any ONE, but two right one is enough to  reconstruct the whole seed just as earlier.<br/>
-Using shares you would use a 3 of 4. Where you can loose ANY 1 but 3 would be needed to reconstruct the seed.<br/>
-Also you can way up, like use 6 of 10 which gives you very high fault tolerance with low risk of seed-rebuild.
-
+Using shares you can use a 3 of 4. Where you can loose ANY 1 but 3 would be needed to reconstruct the seed.<br/>
+Also you can go way up too, like use 6 of 10 which gives you very high fault tolerance with low risk of seed-rebuild.<br/>
 
 <b>How this implemantation works:</b>
 You type in (be careful!!!) your 12 or 24 words long BIP39 seed/mnemonic.
