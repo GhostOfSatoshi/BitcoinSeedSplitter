@@ -37,8 +37,8 @@ Output Shares:<br/>
 5. stage proof earth genre music middle river guess topic swim rebel outer adult spend harvest rapid<br/>
 <br/>
 Advantages:<br/>
-You can loose 2 of the 5 and still be able to restore the original seed.<br/>
-None of the share holders will have any knowledge of the seed nor any chance to restore it.<br/>
+You can loose ANY 2 of the 5 and still be able to restore the original seed.<br/>
+None of the share holders will have any knowledge of the seed nor any chance to restore it (eg. not weakening the seed)<br/>
 
 Be carefull not to set too low fault tolerancy level. For example: 9 of 10 works, but if you can only  access 8 of the Shares you won't be able to restore any part of your seed. You lost it all!
 
