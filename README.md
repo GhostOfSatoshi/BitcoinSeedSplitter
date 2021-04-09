@@ -5,15 +5,15 @@ Different from Slip39 as here we are safeguarding the seed words, not the derive
 <b>Explanation of the problem and solution:</b><br/>
 We are talking about <b>equal</b> shares here. When you split your seed manually you end up with pieces, but it will matter which one you lost because your splits are NOT equal. They are not shares but actually just pieces of the original seed (also making brute force theoretically/future possible).
 Example of easy but sub-optimal manual split:<br/>
-1-2-3-4 (4x3 words=12 words seed)
+1-2-3-4 (4x3 words=12 words seed) split into three:<br/>
 1-2 <br/>
 2-3 <br/>
 3-4 <br/>
-If you loose ANY 1(!) of these you are done. <br/>
+Now ff you loose ANY 1(!) of these you are done. <br/>
 If you add a fourth it's better:<br/>
 1-4 <br/>
-Now you can loose any ONE, but two right one is enough to  reconstruct the whole seed just as earlier. One is enough to guess "only" 6 words which maybe feasable in the future.<br/>
-Using shares you can use a 3 of 4. Where you can loose ANY 1 but 3 would be needed to reconstruct the seed. Knowing one share would give you zero information hence brute for is impoosbile.<br/>
+Now you can loose any ONE, but two right one is enough to  reconstruct the whole seed just as earlier. Also one is enough to guess "only" 6 words which maybe feasable in the future. Two could be enough to guess three words only which is easy TODAY.<br/>
+Using Shares you can use a 3 of 4. Where you can loose ANY 1 but 3 would be needed to reconstruct the seed. Knowing one share would give you zero information hence brute for is impoosbile.<br/>
 You can go way up, like using 6 of 10 which gives you very high fault tolerance with low risk of seed-rebuild. Even knowing 5 of the 10 will not make brute force possible.<br/>
 
 <b>How this implemantation works:</b><br/>
