@@ -28,7 +28,7 @@ Click "Do Split"<br/>
 You will have the shares below which you can write down or copy to clipboard.<br/>
 You can also test and select seeds and see the re-built result below.<br/>
 *Each run will produce different shares because of the rng in shamir.<br/>
-*It is not possible to rebuild lost shares (you can only rebuild the original seed until you have enough shares present). 
+*It is not possible to rebuild lost shares (you can only rebuild the original seed until you have enough shares present). <br/>
 
 <br/>
 <b>How to use to merge</b><br/>
