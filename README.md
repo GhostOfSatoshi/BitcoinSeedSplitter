@@ -36,8 +36,7 @@ Type in the share words to the green field<br/>
 Recognized words will be added to the blue field and full share will be automatically added to the list<br/>
 When enough shares provided seed will be displayed at the bottom (or the progress/error messages)<br/>
 
-
-
+<br/>
 <b>How this implemantation works:</b><br/>
 You type in  your 12 or 24 words long BIP39 seed/mnemonic <b>(be careful on what device!!!)</b><br/>
 Select how many splits you want (2-15) and how many will be needed to restore the original seed (1-14).<br/>
