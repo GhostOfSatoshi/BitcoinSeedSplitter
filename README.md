@@ -15,6 +15,29 @@ If you add a fourth it's better:<br/>
 Now you can loose any ONE, but two right one is enough to  reconstruct the whole seed just as earlier. Also one is enough to guess "only" 6 words which maybe feasable in the future. The right two (1and2, 2and3) is enough to have nine words. Guessing the remaining three words is easy <b>TODAY.</b><br/>
 Using Shares you can use a 3 of 4. Where you can loose ANY 1 but 3 would be needed to reconstruct the seed. Knowing one less than three shares would give you zero information hence brute force is impoosbile. You can go way up, like using 6 of 10 which gives you very high fault tolerance with low risk of seed-rebuild. Even knowing 5 of the 10 will not make brute force possible.<br/>
 
+<br/>
+<b>How to use to split</b><br/>
+Download the zip and unzip to a folder (or the source Visual Studio 2019 solution c#).<br/>
+Run BIP39Splitter.exe (.NET 5 desktop sdk needs to be installed)<br/>
+You see to tabs Split and Merge<br/>
+You enter/copy your seed to the yellow box. When seed is full it locks.<br/>
+You set the share count and threshold (how many total and how many needed to restore)<br/>
+Set the OPTIONAL password which must be provided to restore in addition to threshold share count<br/>
+Seconds (default 30). How long should it try to find shorter outputs. (longer you set the shorter it gets - up to a point, like an hour or so)<br/>
+Click "Do Split"<br/>
+You will have the shares below which you can write down or copy to clipboard.<br/>
+You can also test and select seeds and see the re-built result below.<br/>
+
+<br/>
+<b>How to use to merge</b><br/>
+Go to Merge tab<br/>
+Fill in the password (if used)<br/>
+Type in the share words to the green field<br/>
+Recognized words will be added to the blue field and full share will be automatically added to the list<br/>
+When enough shares provided seed will be displayed at the bottom (or the progress/error messages)<br/>
+
+
+
 <b>How this implemantation works:</b><br/>
 You type in  your 12 or 24 words long BIP39 seed/mnemonic <b>(be careful on what device!!!)</b><br/>
 Select how many splits you want (2-15) and how many will be needed to restore the original seed (1-14).<br/>
