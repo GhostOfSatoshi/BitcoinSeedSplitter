@@ -90,7 +90,7 @@ namespace BIP39Splitter
         }
         private void CalculateFromValidShares()
         {
-            if (liCurrShares.Count < 3)
+            if (liCurrShares.Count < 2)
                 return;
 
             clsBIP39Splitter merger = new clsBIP39Splitter();
